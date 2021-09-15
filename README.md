@@ -1,6 +1,8 @@
-# Google News Scraper
+<h1 align="center">
+Google News Scraper
+</h1>
 
-  
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
