@@ -44,7 +44,29 @@ To get the top stories, you can add:
 The GoogleNews class has two required variables: lang and country. There are several available options you can combine and try out for this. Check out the official Google News webpage to confirm the options available. In the bottom left corner of the page, scroll down to the Language & region section to find the list of supported combinations.
 
 ### Commands
-(lentelė)
+<table>
+ <tr>
+    <th>Search by top news</th>
+    <td>gn.top_news()</td>
+    <td>This search scrapes the result of the top stories on Google News.</td>
+  </tr>
+  <tr>
+    <th>Search by topic headlines</th>
+    <td>gn.topic_headlines('business')</td>
+    <td> This allows you to search based on topic headlines. Available headlines include world, business, nation, technology, entertainment, sports, science, and health.</td>
+  </tr>
+  <tr>
+    <th>Query search</th>
+    <td>gn.search('Panda -China',
+when = '6m')</td>
+    <td>With query search, you can query based on a particular keyword or filter out options without the keyword. You can also set a time limit on the query.  The example above searches for the keyword Panda and filters out options that include the word ‘China’ over the past 6 months.</td>
+  </tr>
+    <tr>
+    <th>Search by geographical location</th>
+    <td>gn.geo_headlines('San Fran')</td>
+    <td>This option will provide search results based on their geographical location. In the example, you can access the Google News feed from San Francisco.</td>
+  </tr>
+</table>
 
 # Output 
 
